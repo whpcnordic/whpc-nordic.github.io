@@ -128,6 +128,49 @@ section{
     margin-top:25px;
 }
 
+.leadership-group {
+    margin-bottom: 50px;
+}
+
+.group-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #004b9b;
+    margin-bottom: 25px;
+}
+
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.two-columns {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.leader-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.leader-card h3 {
+    color: #004b9b;
+    margin-bottom: 12px;
+}
+
+.leader-card .name {
+    color: #0070d2;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+    
+
 .country{
     background:#e8f4ff;
     padding:12px 20px;
@@ -322,72 +365,67 @@ industry, and national supercomputing centres.
 
 </section>
 
-<section id="leadership">
+<section id="leadership" class="leadership-section">
+    <h2>Leadership</h2>
 
-<div class="section-title">
-<h2>Leadership</h2>
-</div>
+    <!-- First Row -->
+    <div class="leadership-group">
+        <div class="group-title">Founders</div>
+        <div class="leadership-grid two-columns">
 
-<div class="team-grid">
-<div class="founder">
-<div class="member">
-<h4>Sweden</h4>
-<p> <a href="https://www.linkedin.com/in/dr-vijeta-sharma-364871100/"
-       target="_blank"
-       rel="noopener noreferrer">
-       Vijeta Sharma
-    </a></p>
-<p>Sweden AI Factory</p>
-<p>RISE Research Institutes of Sweden, Stockholm</p>
-<p>vijeta.sharma@ri.se</p>
-</div>
-</div>
+            <div class="leader-card">
+                <h3>Vijeta Sharma</h3>
+                <p>Sweden AI Factory</p>
+                <p>RISE Research Institutes of Sweden, Stockholm</p>
+                <p>vijeta.sharma@ri.se</p>
+            </div>
 
-<div class="cofounder">
-<div class="member">
-<h4>Finland</h4>
-<p><a href="https://www.linkedin.com/in/jonnahelenius/"
-       target="_blank"
-       rel="noopener noreferrer">
-       Jonna Helenius
-    </a></p>
-<p>Center for Scientific Computing</p>
-<p>IT Center for Science, Heksinki</p>
-<p>jonna.helenius@csc.fi</p>
-</div>
-</div>
-    
-<div class="member">
-<h4>Norway</h4>
-<p><a href="https://www.linkedin.com/in/dhanya-pushpadas-b8363649/"
-       target="_blank"
-       rel="noopener noreferrer">
-       Dhanya Pushpadas
-    </a></p>
-<p>Norwegian AI Factory</p>
-<p>Sigma2 AS Norwegian Research Infrastructure Services, Trondheim</p>
-<p>dhanya.pushpadas@sigma2.no</p>
-</div>
+        </div>
+    </div>
 
-<div class="member">
-<h4>Denmark</h4>
-<p><a href="https://www.linkedin.com/in/marta-schulze-66696b96/"
-       target="_blank"
-       rel="noopener noreferrer">
-       Marta Eva Schulze
-    </a></p>
-<p>National Competence Centre for High-Performance Computing</p>
-<p>Danish e-Infrastructure Consortium (DeiC), Copenhegan</p>
-<p>marta.schulze@deic.dk</p>
- </div>
+    <div class="leadership-group">
+        <div class="group-title">Co-Founders</div>
+        <div class="leadership-grid two-columns">
 
-<div class="member">
-<h4>Iceland</h4>
-<p>TBD</p>
-</div>
+            <div class="leader-card">
+                <h3>Jonna Helenius</h3>
+                <p>Center for Scientific Computing</p>
+                <p>IT Center for Science, Helsinki</p>
+                <p>jonna.helenius@csc.fi</p>
+            </div>
 
-</div>
+        </div>
+    </div>
 
+    <!-- Second Row -->
+    <div class="leadership-group">
+        <div class="group-title">Country Representatives</div>
+
+        <div class="leadership-grid">
+
+            <div class="leader-card">
+                <h3>Norway</h3>
+                <p class="name">Dhanya Pushpadas</p>
+                <p>Norwegian AI Factory</p>
+                <p>Sigma2 AS Norwegian Research Infrastructure Services, Trondheim</p>
+                <p>dhanya.pushpadas@sigma2.no</p>
+            </div>
+
+            <div class="leader-card">
+                <h3>Denmark</h3>
+                <p class="name">Marta Eva Schulze</p>
+                <p>National Competence Centre for HPC</p>
+                <p>Danish e-Infrastructure Consortium (DeiC), Copenhagen</p>
+                <p>marta.schulze@deic.dk</p>
+            </div>
+
+            <div class="leader-card">
+                <h3>Iceland</h3>
+                <p class="name">TBD</p>
+            </div>
+
+        </div>
+    </div>
 </section>
 
 <section id="events" class="events">
